@@ -29,9 +29,9 @@ theme:
     - toc.follow
     - navigation.top
   palette:
-    # Palette toggle for dark mode
     scheme: slate
     primary: teal
+    accent: amber
 
 plugins:
   - search:
