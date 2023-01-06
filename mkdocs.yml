@@ -2,22 +2,11 @@ site_name: Timewell Tech Docs
 
 site_url: https://docs.timewelltech.ca/
 
-theme:
-  icon:
-    admonition:
-      note: fontawesome/solid/note-sticky
-      abstract: fontawesome/solid/book
-      info: fontawesome/solid/circle-info
-      tip: fontawesome/solid/bullhorn
-      success: fontawesome/solid/check
-      question: fontawesome/solid/circle-question
-      warning: fontawesome/solid/triangle-exclamation
-      failure: fontawesome/solid/bomb
-      danger: fontawesome/solid/skull
-      bug: octicons/bug-16
-      example: octicons/beaker-16
-      quote: octicons/quote-16
+site_author: Shawn Timewell
 
+copyright: Copyright &copy; 2022 - 2023 Timewell Tech
+
+theme:
   name: material
   font:
     text: Roboto
@@ -33,9 +22,25 @@ theme:
     primary: teal
     accent: amber
 
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
 plugins:
   - search:
       lang: en
+
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
@@ -56,11 +61,14 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
   - pymdownx.tabbed:
       alternate_style: true
+
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/stim-ca
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/timewelltech
-copyright: Copyright &copy; 2022 - 2023 Timewell Tech
-site_author: Shawn Timewell
+    - icon: fontawesome/solid/globe
+      link: https://docs.timewelltech.ca/
+    - icon: fontawesome/solid/blog
+      link: https://blog.timewelltech.ca
