@@ -1,28 +1,49 @@
 site_name: Timewell Tech Docs
-
 site_url: https://docs.timewelltech.ca/
-
 site_author: Shawn Timewell
-
 copyright: Copyright &copy; 2022 - 2023 Timewell Tech
+repo_name: stim-ca/docs.timewelltech.ca
+repo_url: https://github.com/stim-ca/docs.timewelltech.ca
 
 theme:
   name: material
-  font:
-    text: Roboto
-    code: Roboto Mono
+  custom_dir: overrides
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: timewelltech
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   features:
-    - navigation.instant
-    - navigation.sections
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
     - navigation.expand
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.footer
     - toc.follow
     - navigation.top
-  palette:
-    scheme: slate
-    primary: teal
-    accent: amber
+    - search.highlight
+    - search.share
+    - search.suggest
 
   icon:
+    repo: fontawesome/brands/github
     admonition:
       note: fontawesome/solid/note-sticky
       abstract: fontawesome/solid/book
@@ -40,29 +61,45 @@ theme:
 plugins:
   - search:
       lang: en
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: false
+      enable_creation_date: false
+      enabled: true
 
 markdown_extensions:
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - markdown.extensions.abbr
   - markdown.extensions.admonition
   - markdown.extensions.attr_list
   - markdown.extensions.def_list
   - markdown.extensions.tables
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
 
 extra:
+  analytics:
+    provider: custom
+    property: plausible
+
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/stim-ca
@@ -72,3 +109,6 @@ extra:
       link: https://timewelltech.ca/
     - icon: fontawesome/solid/blog
       link: https://blog.timewelltech.ca
+
+extra_css:
+  - stylesheets/extra.css
