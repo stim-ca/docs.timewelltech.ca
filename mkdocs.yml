@@ -1,6 +1,6 @@
 site_name: Timewell Tech Docs
 
-site_url:  https://docs.timewelltech.ca/
+site_url: https://docs.timewelltech.ca/
 
 theme:
   icon:
@@ -14,12 +14,12 @@ theme:
       warning: fontawesome/solid/triangle-exclamation
       failure: fontawesome/solid/bomb
       danger: fontawesome/solid/skull
-      bug: octicons/bug-16  
+      bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
 
   name: material
-  font: 
+  font:
     text: Roboto
     code: Roboto Mono
   features:
@@ -28,20 +28,10 @@ theme:
     - navigation.expand
     - toc.follow
     - navigation.top
-  palette: 
-        # Palette toggle for dark mode
-    - scheme: slate
-      primary:  teal
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-
-            # Palette toggle for light mode
-    - scheme: default
-      primary:  deep orange
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+  palette:
+    # Palette toggle for dark mode
+    scheme: slate
+    primary: teal
 
 plugins:
   - search:
@@ -67,11 +57,10 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 extra:
- 
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/stim-ca
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/timewelltech
 copyright: Copyright &copy; 2022 - 2023 Timewell Tech
-site_author:  Shawn Timewell
+site_author: Shawn Timewell
