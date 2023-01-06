@@ -1,5 +1,11 @@
 # Examples
 
+## Code Snippet
+
+```powershell
+Get-ChildItem $path
+```
+
 ## Code Snippet With Title
 
 ```powershell title="Return List of Files in a Path"
