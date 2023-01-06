@@ -25,6 +25,8 @@ jobs:
 
       - name: Install mkdocs-material
         run: pip install mkdocs-material
+        
+      - name: Install mkdocs-git-revision-date-localized-plugin
         run: pip install mkdocs-git-revision-date-localized-plugin
 
       - name: Setup Pages
