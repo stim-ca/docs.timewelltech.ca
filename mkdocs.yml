@@ -64,7 +64,7 @@ plugins:
   - git-revision-date-localized:
       type: date
       fallback_to_build_date: false
-      enable_creation_date: false
+      enable_creation_date: true
       enabled: true
 
 markdown_extensions:
@@ -98,7 +98,7 @@ markdown_extensions:
 extra:
   analytics:
     provider: custom
-    property: plausible
+    property: defer data-domain="docs.timewelltech.ca" src="https://analytics.timewelltech.ca/js/script.js"
 
   social:
     - icon: fontawesome/brands/github
