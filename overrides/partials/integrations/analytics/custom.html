@@ -1,3 +1,15 @@
 <script>
-<script defer data-domain="blog.timewelltech.ca" src="https://analytics.timewelltech.ca/js/script.js"></script>
+  /* Add custom analytics integration here, e.g. */
+  var property = "{{ <script defer data-domain="docs.timewelltech.ca" src="https://analytics.timewelltech.ca/js/script.js"></script>}}" 
+
+
+
+  /* Wait for page to load and application to mount */
+  document.addEventListener("DOMContentLoaded", function() {
+    location$.subscribe(function(url) {
+      /* Add custom page event tracking here */ 
+
+
+    })
+  })
 </script>
