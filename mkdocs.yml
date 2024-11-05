@@ -98,7 +98,8 @@ markdown_extensions:
 extra:
   analytics:
     provider: custom
-    property: <script defer data-domain="docs.timewelltech.ca" src="https://analytics.timewelltech.ca/js/script.js"></script>
+    property: <script defer data-domain="blog.timewelltech.ca" src="https://plausible.timewelltech.ca/js/script.hash.pageview-props.js"></script> <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
 
 
   social:
